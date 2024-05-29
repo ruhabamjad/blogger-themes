@@ -1140,7 +1140,8 @@ background: #3fbb50;
   	flex-direction: column;
   	align-items: center;
   	text-align: center;
-    background: var(--grey-2);
+    background: var(--grey-1);
+    border-radius: 5px;
     padding: 1em;
 }
 .about-author .avatar-container{
@@ -1254,6 +1255,7 @@ margin: .5rem 0;
 	background: var(--light-color);
     padding: 2em;
     margin-bottom: 1em;
+    border-radius: 5px;
 }
 .comments iframe{
   height: revert-layer;
@@ -1275,6 +1277,7 @@ margin: 2em 0;
 	display: block;
     border: var(--border);
     padding: 1em;
+    border-radius: 5px;
 }
 .comments .comment-block .comment-header{margin-left: 3em;}
 .comments .datetime{
@@ -1392,11 +1395,12 @@ display: none;
     }
 
     .loadMore a{
-    background: var(--main);
+    background: var(--main-dark);
     color: var(--light-color);
     padding: .5em 2.2em .5em 1em;
     display: inline-block;
     position: relative;
+    border-radius: 5px;
     }
     
     .loadMore a::after{
