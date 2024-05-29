@@ -138,9 +138,10 @@ Our Site:    https://www.techbegginer.com/
   }
 
 :root {
-  --main: #e67400;
+  --main: #0066ff;
+  --main-light: #99c2ff;
   --main-dark: #000;
-  --link-color: #ff8100;
+  --link-color: #0066ff;
   --dark-color: #333;
   --heading-color: #000;
   --text-grey: #777;
@@ -641,7 +642,7 @@ progress {
 		color: var(--light-color);
 		}
 
-		.header-wrap a:hover{color: var(--main);}
+		.header-wrap a:hover{color: var(--main-light);}
 
 		.header-wrap input::placeholder{color: inherit;}
 
@@ -702,7 +703,7 @@ progress {
 
 		.collapse:hover,
 		.closeNav:hover{
-		  color: var(--main);
+		  color: var(--main-light);
 		}
 
 		.collapse svg,
@@ -725,7 +726,7 @@ progress {
 
 		.search-icon:hover,
 		.closeSearch:hover{
-			color: var(--main);
+			color: var(--main-light);
 		}
 
         .search-icon svg {
@@ -773,7 +774,7 @@ progress {
   .widget .aside-search form{display: flex;}
   .aside-search input,.aside-search button{margin:0;}
   .aside-search input{width:80%;}
-  .aside-search  button{width: 20%;border:1px solid var(--main);}
+  .aside-search  button{width: 20%;background:var(--main-dark);border-color:var(--main-dark);}
   .aside-search button:hover{opacity: .8;}
   .aside-search svg{margin-top:-6px;}
   .ads{text-align:center;background:var(--light-color);line-height: 5rem;border-radius: 5px;}
@@ -961,9 +962,9 @@ color: var(--light-color);
 	height: 2rem;
     width: 2rem;
     cursor: pointer;
-    background: var(--main);
+    background: var(--main-dark);
     color: var(--light-color);
-    opacity: .5;
+    opacity: .7;
     bottom: 1em;
     right: 1em;
     transition: var(--transition);
@@ -1960,7 +1961,7 @@ width: 33%;
                     </svg></div>
     
     <b:section id='header' name='Header' showaddelement='false'>
-      <b:widget id='Header1' locked='true' title='Tech Begginer (Header)' type='Header' version='2' visible='true'>
+      <b:widget id='Header1' locked='true' title='HowtoBegins - Kya Hai, Kaise Kare aur Paise Kaise Kamaye (Header)' type='Header' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjCdWTQN4ugecRVRXBw5bGL65zRQI7qXzrwuDZ5hFEsOUZ5BiSX1_6iuSkEC99MPB9k99ck0mKVfeLv7PGlvrD2_RazDezdJ_VIwVP0vDTxxQZ6a8Ad9x6SR-oOjwNjZBXzTyf6ZPCf_TMat7P52lk9DH9m0vf0_R0OcfiGBva1dGTuEsM-ZjFYcrFjEmc=s150</b:widget-setting>
           <b:widget-setting name='displayHeight'>50</b:widget-setting>
@@ -3052,17 +3053,19 @@ width: 33%;
         <b:section id='footermenu' name='Footer Nav' showaddelement='false'>
           <b:widget id='LinkList22' locked='true' title='' type='LinkList' version='1'>
             <b:widget-settings>
+              <b:widget-setting name='link-5'>https://www.techbegginer.com/p/terms-and-conditions.html</b:widget-setting>
               <b:widget-setting name='link-3'>https://www.techbegginer.com/p/privacy-policy.html</b:widget-setting>
-              <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='link-4'>https://www.techbegginer.com/p/terms-and-conditions.html</b:widget-setting>
               <b:widget-setting name='text-1'>Contact</b:widget-setting>
-              <b:widget-setting name='link-1'>https://www.techbegginer.com/p/contact-us.html</b:widget-setting>
               <b:widget-setting name='text-0'>About</b:widget-setting>
-              <b:widget-setting name='link-2'>https://www.techbegginer.com/p/disclaimer.html</b:widget-setting>
               <b:widget-setting name='text-3'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='link-0'>https://www.techbegginer.com/p/about-us.html</b:widget-setting>
               <b:widget-setting name='text-2'>Disclaimer</b:widget-setting>
+              <b:widget-setting name='text-5'><![CDATA[Terms & Conditions]]></b:widget-setting>
               <b:widget-setting name='text-4'><![CDATA[Terms & Conditions]]></b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-1'>https://www.techbegginer.com/p/contact-us.html</b:widget-setting>
+              <b:widget-setting name='link-2'>https://www.techbegginer.com/p/disclaimer.html</b:widget-setting>
+              <b:widget-setting name='link-0'>https://www.techbegginer.com/p/about-us.html</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
           
@@ -3130,7 +3133,7 @@ function searchNav(){
         })}searchNav();
 
 document.getElementById('year').innerText = new Date().getFullYear();
-document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
+//document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
 let ruhab = document.getElementById('ruhab');
 if(!ruhab || ruhab.getAttribute('href') !== 'https://www.techbegginer.com/' || ruhab.innerText !== 'Tech Begginer'){window.location = 'https://www.techbegginer.com/';}
 let gotop = document.getElementById('gotop');
