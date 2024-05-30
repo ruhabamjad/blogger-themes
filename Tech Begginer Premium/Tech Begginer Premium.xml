@@ -1235,11 +1235,6 @@ margin-top: .5rem;
 }
   
 .post-body a.btn{color: var(--light-color);}
-  
-.post-body form{
-background: var(--grey-2);
-padding: 1em;
-}
 
 .post-body form input,
 .post-body form textarea,
@@ -1964,7 +1959,7 @@ width: 33%;
                     </svg></div>
     
     <b:section id='header' name='Header' showaddelement='false'>
-      <b:widget id='Header1' locked='true' title='HowtoBegins - Kya Hai, Kaise Kare aur Paise Kaise Kamaye (Header)' type='Header' version='2' visible='true'>
+      <b:widget id='Header1' locked='true' title='Tech Begginer (Header)' type='Header' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjCdWTQN4ugecRVRXBw5bGL65zRQI7qXzrwuDZ5hFEsOUZ5BiSX1_6iuSkEC99MPB9k99ck0mKVfeLv7PGlvrD2_RazDezdJ_VIwVP0vDTxxQZ6a8Ad9x6SR-oOjwNjZBXzTyf6ZPCf_TMat7P52lk9DH9m0vf0_R0OcfiGBva1dGTuEsM-ZjFYcrFjEmc=s150</b:widget-setting>
           <b:widget-setting name='displayHeight'>50</b:widget-setting>
@@ -3136,7 +3131,7 @@ function searchNav(){
         })}searchNav();
 
 document.getElementById('year').innerText = new Date().getFullYear();
-//document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
+document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
 let ruhab = document.getElementById('ruhab');
 if(!ruhab || ruhab.getAttribute('href') !== 'https://www.techbegginer.com/' || ruhab.innerText !== 'Tech Begginer'){window.location = 'https://www.techbegginer.com/';}
 let gotop = document.getElementById('gotop');
