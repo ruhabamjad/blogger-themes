@@ -263,9 +263,7 @@ audio {
 img {
   vertical-align: middle;
   object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-style: italic;
+  border-radius: 5px;
 }
 
 svg{
@@ -1168,6 +1166,7 @@ margin-top: .5rem;
     padding: 0 1em;
     width: fit-content;
     max-height: 55px;
+    border-radius: 5px;
     overflow: hidden;
   }
   .mytoc span {
@@ -1190,7 +1189,7 @@ margin-top: .5rem;
     transform: rotate(45deg);
 }
   .mytoc ol {
-    padding: 0 1em 1em;
+    padding: 0 1em 1em 2em;
     margin: 0!important;
 }
   
@@ -1427,19 +1426,19 @@ display: none;
   border-radius: 5px;
   background-color: var(--main);
   color: var(--main);
-  box-shadow: 9984px 0 0 0 var(--main), 9999px 0 0 0 var(--main), 10014px 0 0 0 var(--main);
+  box-shadow: 9984px 0 0 0 var(--main-dark), 9999px 0 0 0 var(--main-dark), 10014px 0 0 0 var(--main-dark);
   animation: dot-carousel .7s infinite ease-in-out;
-    display: none;
+  display: none;
 }
 @keyframes dot-carousel {
   0% {
-    box-shadow: 9984px 0 0 -1px var(--main), 9999px 0 0 1px var(--main), 10014px 0 0 -1px var(--main);
+    box-shadow: 9984px 0 0 -1px var(--main-dark), 9999px 0 0 1px var(--main-dark), 10014px 0 0 -1px var(--main-dark);
   }
   50% {
-    box-shadow: 10014px 0 0 -1px var(--main), 9984px 0 0 -1px var(--main), 9999px 0 0 1px var(--main);
+    box-shadow: 10014px 0 0 -1px var(--main-dark), 9984px 0 0 -1px var(--main-dark), 9999px 0 0 1px var(--main-dark);
   }
   100% {
-    box-shadow: 9999px 0 0 1px var(--main), 10014px 0 0 -1px var(--main), 9984px 0 0 -1px var(--main);
+    box-shadow: 9999px 0 0 1px var(--main-dark), 10014px 0 0 -1px var(--main-dark), 9984px 0 0 -1px var(--main-dark);
   }
 }
 	.that-all{
@@ -1568,7 +1567,7 @@ display: none;
           margin-top: 0;
     	  margin-left: 1em;
     	  position: sticky;
-    	  top: 0;
+    	  top: 1em;
     	  height: 100%;
         }
       
@@ -3267,7 +3266,7 @@ let codeElements = document.querySelectorAll(".copyThis");
 /*<![CDATA[*/
 
 //TOC by Ruhab Amjad
-const headings = document.querySelectorAll('main article .post-body h2,main article .post-body h3');
+const headings = document.querySelectorAll('main article .post-body h2');
 if(headings){
 if(document.querySelector(".mytoc")){
 document.querySelector(".mytoc span").addEventListener("click", function () {
