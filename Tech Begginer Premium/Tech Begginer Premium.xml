@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' b:version='2' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
- <!--- Tech Begginer Seo Pack /-->
+ <!--- Ruhab Seo All Seo Pack /-->
 <b:if cond='data:view.isError'><title>Error 404: Page Not Found</title></b:if>
   <b:if cond='data:view.isHomepage'><title><data:blog.pageTitle/></title></b:if>
   <b:if cond='!data:view.isMultipleItems'><title><data:blog.pageName/></title></b:if>
@@ -165,7 +165,7 @@ Our Site:    https://www.techbegginer.com/
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -209,33 +209,33 @@ h5,
 h6,
 .h6 {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   color: var(--heading-color);
 }
 
 h1,
 .h1 {
-  font-size: 1.875rem;
+  font-size: 1.7rem;
 }
 
 h2,
 .h2 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.375rem;
+  font-size: 1.3rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 h5,
 .h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h6,
@@ -293,6 +293,7 @@ input[type='reset'],
   padding: .5em 1em;
   cursor: pointer;
   display: inline-block;
+  border-radius: 5px;
 }
 
 input,
@@ -305,6 +306,7 @@ button {
   width: 100%;
   border: 1px solid #bbb;
   padding: .5em;
+  border-radius: 5px;
 }
 
 input:focus,
@@ -552,6 +554,8 @@ progress {
   text-align: center;
 }
 
+.font-lg{font-size: 1.25rem;}
+
 .border{border: 1px solid;}
 
 .pd{padding: 1em;}
@@ -668,8 +672,8 @@ progress {
 
         .nav {
             position: absolute;
-            left: 0;
-            top: -800px;
+            left: -100%;
+            top: 1em;
             background: var(--main-dark);
             width: 100%;
             overflow-y: auto;
@@ -684,7 +688,7 @@ progress {
 
         .nav ul li a {
             display: block;
-            padding: 1.1em 1em;
+            padding: 1em;
 			font-weight: 500;
         }
 
@@ -890,13 +894,15 @@ display: inline-block;
 .Label .cloud-label ul li a{
 	font-size: 0.875rem;
     display: inline-block;
-    padding: 0.3em 1em;
+    padding: 0.5em 1em;
     margin: 0 0.2em 0.5em 0;
-    border: 1px solid var(--main);
-    color: var(--main);
+    border-radius: 5px;
+    border: 1px solid var(--main-dark);
+    color: var(--main-dark);
 }
 .Label .cloud-label ul li a:hover{
 background: var(--main);
+border-color: var(--main);
 color: var(--light-color);
 }
 .Label .cloud-label ul li a .label-count{
@@ -908,7 +914,8 @@ border-bottom: var(--border);
 .Label .list-label ul li a{
 display: flex;
 justify-content: space-between;
-padding: .5em 0;
+padding: .8em 0;
+text-transform: capitalize;
 }
 .Wikipedia img{
 margin: 1rem 0;
@@ -1328,9 +1335,7 @@ display: none;
     }
     
     .post-outer-container{
-    margin-bottom: 1.2em;
-    padding-bottom: 2em;
-    border-bottom: var(--border);
+    margin-bottom: 1.5em;
     }
     
     .post-outer-container:last-child{
@@ -1372,6 +1377,7 @@ display: none;
             padding: 0.5em 1em;
             margin-top: 1em;
     		font-size: .875rem;
+       		border-radius: 5px;
     		transition: var(--transition);
     }
     
@@ -1386,6 +1392,7 @@ display: none;
     
     .blog-pager{
       text-align: center;
+      margin-top: 2em;
     }
 
     .loadMore a{
@@ -1410,7 +1417,7 @@ display: none;
     }
     
     .loadMore a:hover{
-      opacity: .8;
+    opacity: .8;
     }
 
     .loading {
@@ -1538,9 +1545,9 @@ display: none;
 
             .nav {
                 position: relative;
-                top: 0!important;
+                top: unset;
+    			left: unset;
                 width: auto;
-                margin-right: 2em;
             }
 
             .nav ul {
@@ -1576,6 +1583,7 @@ display: none;
     		.share-box b{position:absolute;left:.3em;top:-3em;}
     }
 	.block{max-height:100%!important;}
+    .left{left: 0!important;}
 /*Responsivenes Ends*/
     
     </style>
@@ -2000,8 +2008,8 @@ width: 33%;
     <b:section id='nav' name='Navbar' showaddelement='false'>
       <b:widget id='LinkList1' locked='true' title='Menu' type='LinkList' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='link-5'>#</b:widget-setting>
-          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='link-5'>https://www.techbegginer.com/search/label/open%20world</b:widget-setting>
+          <b:widget-setting name='link-3'>https://www.techbegginer.com/search/label/shooting</b:widget-setting>
           <b:widget-setting name='link-4'>#</b:widget-setting>
           <b:widget-setting name='text-1'>Action</b:widget-setting>
           <b:widget-setting name='text-0'>GTA</b:widget-setting>
@@ -2010,9 +2018,9 @@ width: 33%;
           <b:widget-setting name='text-5'>Open World</b:widget-setting>
           <b:widget-setting name='text-4'>Adventure</b:widget-setting>
           <b:widget-setting name='sorting'>NONE</b:widget-setting>
-          <b:widget-setting name='link-1'>#</b:widget-setting>
-          <b:widget-setting name='link-2'>#</b:widget-setting>
-          <b:widget-setting name='link-0'>#</b:widget-setting>
+          <b:widget-setting name='link-1'>https://www.techbegginer.com/search/label/action</b:widget-setting>
+          <b:widget-setting name='link-2'>https://www.techbegginer.com/search/label/racing</b:widget-setting>
+          <b:widget-setting name='link-0'>https://www.techbegginer.com/search/label/gta</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
           
@@ -2031,13 +2039,6 @@ width: 33%;
     </b:section>
         
       </nav>
-      
-                    <div class='search-icon' id='searchIcon'><svg enable-background='new 0 0 32 32' id='Glyph' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-                        <path d='M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z' fill='currentColor' id='XMLID_223_'/>
-                    </svg></div>
-      <div class='closeSearch' id='closeSearch'><svg version='1.1' viewBox='0 0 512 512' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-                            <path d='M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z'/>
-                        </svg></div>
       
         <form action='/search' class='search-form' id='searchForm' target='_top'><input id='searchInput' name='q' placeholder='Search...' type='search' value=''/></form>
       
@@ -2936,6 +2937,53 @@ width: 33%;
       </div>
     
 <b:section class='sidebar' id='Sidebar' showaddElement='yes'>
+  <b:widget id='Label2' locked='false' title='Labels' type='Label' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+      <b:include name='widget-title'/>
+      <b:include name='content'/>
+    </b:includable>
+    <b:includable id='cloud'>
+  <b:loop values='data:labels' var='label'>
+    <span class='label-size'>
+      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+      <a class='label-name' expr:href='data:label.url'>
+        <data:label.name/>
+        <b:if cond='data:this.showFreqNumbers'>
+          <span class='label-count'><data:label.count/></span>
+        </b:if>
+      </a>
+    </span>
+  </b:loop>
+</b:includable>
+    <b:includable id='content'>
+      <div class='widget-content'>
+        <b:class expr:name='data:this.display + &quot;-label&quot;'/>
+        <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+        <b:include cond='data:this.display == &quot;cloud&quot;' name='list'/>
+      </div>
+    </b:includable>
+    <b:includable id='list'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <a class='label-name' expr:href='data:label.url'>
+              <data:label.name/>
+              <b:if cond='data:this.showFreqNumbers'>
+                <span class='label-count'><data:label.count/></span>
+              </b:if>
+            </a>
+          </li>
+        </b:loop>
+      </ul>
+    </b:includable>
+  </b:widget>
   <b:widget cond='data:blog.url == &quot;https://www.techbegginer.com/p/contact-us.html&quot;' id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' visible='true'>
     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -3000,6 +3048,53 @@ width: 33%;
     <data:content/>
   </div>
 </b:includable>
+  </b:widget>
+  <b:widget id='Label1' locked='false' title='Categories' type='Label' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>CLOUD</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+      <b:include name='widget-title'/>
+      <b:include name='content'/>
+    </b:includable>
+    <b:includable id='cloud'>
+  <b:loop values='data:labels' var='label'>
+    <span class='label-size'>
+      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+      <a class='label-name' expr:href='data:label.url'>
+        <data:label.name/>
+        <b:if cond='data:this.showFreqNumbers'>
+          <span class='label-count'><data:label.count/></span>
+        </b:if>
+      </a>
+    </span>
+  </b:loop>
+</b:includable>
+    <b:includable id='content'>
+      <div class='widget-content'>
+        <b:class expr:name='data:this.display + &quot;-label&quot;'/>
+        <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+        <b:include cond='data:this.display == &quot;cloud&quot;' name='list'/>
+      </div>
+    </b:includable>
+    <b:includable id='list'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <a class='label-name' expr:href='data:label.url'>
+              <data:label.name/>
+              <b:if cond='data:this.showFreqNumbers'>
+                <span class='label-count'><data:label.count/></span>
+              </b:if>
+            </a>
+          </li>
+        </b:loop>
+      </ul>
+    </b:includable>
   </b:widget>
 </b:section>
     
@@ -3101,37 +3196,15 @@ width: 33%;
     
     /*<![CDATA[*/
 
-function searchNav(){
- 		let collapse = document.getElementById("collapse");
-        let nav = document.getElementById("nav");
-        let closeNav = document.getElementById("closeNav");
-        let searchIcon = document.getElementById("searchIcon");
-        let searchForm = document.getElementById("searchForm");
-        let closeSearch = document.getElementById("closeSearch");
-        collapse.addEventListener('click', function () {
-            nav.style.top = "12px";
-            collapse.style.display = "none";
-            closeNav.style.display = "block";
-        })
-        closeNav.addEventListener('click', function () {
-            nav.style.top = '-800px';
-            closeNav.style.display = "none";
-            collapse.style.display = "block";
-        })
-        searchIcon.addEventListener('click', function () {
-            searchForm.style.display = "block";
-            document.getElementById("searchInput").focus();
-			closeSearch.style.display = "block";
-			searchIcon.style.display = "none";
-        })
-        closeSearch.addEventListener('click', function () {
-            searchForm.style.display = "none";
-			closeSearch.style.display = "none";
-			searchIcon.style.display = "block";
-        })}searchNav();
+let collapse = document.getElementById("collapse");
+let nav = document.getElementById("nav");
+
+collapse.addEventListener("click", function(){
+nav.classList.toggle("left");
+});
 
 document.getElementById('year').innerText = new Date().getFullYear();
-document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
+//document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
 let ruhab = document.getElementById('ruhab');
 if(!ruhab || ruhab.getAttribute('href') !== 'https://www.techbegginer.com/' || ruhab.innerText !== 'Tech Begginer'){window.location = 'https://www.techbegginer.com/';}
 let gotop = document.getElementById('gotop');

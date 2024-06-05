@@ -165,7 +165,7 @@ Our Site:    https://www.techbegginer.com/
 
 html {
   scroll-behavior: smooth;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 body {
@@ -209,7 +209,6 @@ h5,
 h6,
 .h6 {
   font-weight: 700;
-  line-height: 1.3;
   color: var(--heading-color);
 }
 
@@ -554,7 +553,7 @@ progress {
   text-align: center;
 }
 
-.font-lg{font-size: 1.25rem;}
+.font-lg{font-size: 1.125rem;}
 
 .border{border: 1px solid;}
 
@@ -897,12 +896,11 @@ display: inline-block;
     padding: 0.5em 1em;
     margin: 0 0.2em 0.5em 0;
     border-radius: 5px;
-    border: 1px solid var(--main-dark);
-    color: var(--main-dark);
+    border: 1px solid var(--main);
+    color: var(--main);
 }
 .Label .cloud-label ul li a:hover{
 background: var(--main);
-border-color: var(--main);
 color: var(--light-color);
 }
 .Label .cloud-label ul li a .label-count{
@@ -966,6 +964,7 @@ color: var(--light-color);
 	position: fixed;
 	height: 2rem;
     width: 2rem;
+    border-radius: 5px;
     cursor: pointer;
     background: var(--main-dark);
     color: var(--light-color);
@@ -979,10 +978,10 @@ color: var(--light-color);
 #gotop::after{
 	content: '';
     position: absolute;
-    top: 14px;
-    left: 12px;
-    width: 10px;
-    height: 10px;
+    top: 12px;
+    left: 10px;
+    width: 8px;
+    height: 8px;
     border-top: 3px solid;
     border-right: 3px solid;
     transform: rotate(-45deg);
@@ -1336,6 +1335,8 @@ display: none;
     
     .post-outer-container{
     margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: var(--border);
     }
     
     .post-outer-container:last-child{
@@ -1345,20 +1346,22 @@ display: none;
     
     .home-posts .authors-meta {
             font-size: .875rem;
-            margin: .5em 0 1em 0;
+            margin: 1em 0;
             color: var(--text-grey);
         }
     
         .byline-div{margin: 0 .3em;}
+    
+        .index-title{font-size: 1.4rem;}
 
         .home-post .thumb-img {
             width: 100%;
-            height: 180px;
+            height: 170px;
         }
 
         .thumb-img img {
             width: 100%;
-            height: 180px;
+            height: 170px;
     	    border: var(--border);
         }
 
@@ -1392,7 +1395,7 @@ display: none;
     
     .blog-pager{
       text-align: center;
-      margin-top: 2em;
+      margin-top: .5em;
     }
 
     .loadMore a{
@@ -1407,7 +1410,7 @@ display: none;
     .loadMore a::after{
     content: &#39;&#39;;
     position: absolute;
-    top: 14px;
+    top: 13px;
     right: 14px;
     width: .5rem;
     height: .5rem;
@@ -1419,29 +1422,20 @@ display: none;
     .loadMore a:hover{
     opacity: .8;
     }
-
-    .loading {
-  position: relative;
-  left: -9999px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: var(--main);
-  color: var(--main);
-  box-shadow: 9984px 0 0 0 var(--main-dark), 9999px 0 0 0 var(--main-dark), 10014px 0 0 0 var(--main-dark);
-  animation: dot-carousel .7s infinite ease-in-out;
+    
+.loading {
+  border: 2px solid var(--main-dark);
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: loader .5s linear infinite;
   display: none;
 }
-@keyframes dot-carousel {
-  0% {
-    box-shadow: 9984px 0 0 -1px var(--main-dark), 9999px 0 0 1px var(--main-dark), 10014px 0 0 -1px var(--main-dark);
-  }
-  50% {
-    box-shadow: 10014px 0 0 -1px var(--main-dark), 9984px 0 0 -1px var(--main-dark), 9999px 0 0 1px var(--main-dark);
-  }
-  100% {
-    box-shadow: 9999px 0 0 1px var(--main-dark), 10014px 0 0 -1px var(--main-dark), 9984px 0 0 -1px var(--main-dark);
-  }
+
+@keyframes loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 	.that-all{
 	display: inline-block;
@@ -1967,7 +1961,7 @@ width: 33%;
                     </svg></div>
     
     <b:section id='header' name='Header' showaddelement='false'>
-      <b:widget id='Header1' locked='true' title='HowtoBegins - Kya Hai, Kaise Kare aur Paise Kaise Kamaye (Header)' type='Header' version='2' visible='true'>
+      <b:widget id='Header1' locked='true' title='Tech Begginer (Header)' type='Header' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjCdWTQN4ugecRVRXBw5bGL65zRQI7qXzrwuDZ5hFEsOUZ5BiSX1_6iuSkEC99MPB9k99ck0mKVfeLv7PGlvrD2_RazDezdJ_VIwVP0vDTxxQZ6a8Ad9x6SR-oOjwNjZBXzTyf6ZPCf_TMat7P52lk9DH9m0vf0_R0OcfiGBva1dGTuEsM-ZjFYcrFjEmc=s150</b:widget-setting>
           <b:widget-setting name='displayHeight'>50</b:widget-setting>
@@ -2095,15 +2089,15 @@ width: 33%;
 </b:includable>
         <b:includable id='Multiples' var='post'>
 	<div class='home-posts'>
-    <b:include data='post' name='postTitle'/>
-	<b:include data='post' name='postHeader'/>
     <div class='home-post row-s'>
     <div class='thumb-img'>
     <b:include data='post' name='postFeaturedImage'/>
       </div>
     <div class='home-text'>
+      <b:include data='post' name='postTitle'/>
+	<b:include data='post' name='postHeader'/>
     <b:include data='post' name='postBodySnippet'/>
-	<b:include data='post' name='postJumpLink'/>
+	<!--<b:include data='post' name='postJumpLink'/>-->
       </div>
           </div>
       </div>
@@ -2568,7 +2562,7 @@ width: 33%;
   </div>
 </b:includable>
         <b:includable id='postBodySnippet' var='post'>
-  <p class='home-snippet'><b:eval expr='data:post.snippets.long snippet { length: 190 }'/></p>
+  <p class='home-snippet'><b:eval expr='data:post.snippets.long snippet { length: 85 }'/></p>
 </b:includable>
         <b:includable id='postBreadcrumbs' var='post'>
               <!-- Post Breadcrumbs -->
@@ -2937,53 +2931,6 @@ width: 33%;
       </div>
     
 <b:section class='sidebar' id='Sidebar' showaddElement='yes'>
-  <b:widget id='Label2' locked='false' title='Labels' type='Label' visible='true'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main' var='this'>
-      <b:include name='widget-title'/>
-      <b:include name='content'/>
-    </b:includable>
-    <b:includable id='cloud'>
-  <b:loop values='data:labels' var='label'>
-    <span class='label-size'>
-      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
-      <a class='label-name' expr:href='data:label.url'>
-        <data:label.name/>
-        <b:if cond='data:this.showFreqNumbers'>
-          <span class='label-count'><data:label.count/></span>
-        </b:if>
-      </a>
-    </span>
-  </b:loop>
-</b:includable>
-    <b:includable id='content'>
-      <div class='widget-content'>
-        <b:class expr:name='data:this.display + &quot;-label&quot;'/>
-        <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
-        <b:include cond='data:this.display == &quot;cloud&quot;' name='list'/>
-      </div>
-    </b:includable>
-    <b:includable id='list'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <a class='label-name' expr:href='data:label.url'>
-              <data:label.name/>
-              <b:if cond='data:this.showFreqNumbers'>
-                <span class='label-count'><data:label.count/></span>
-              </b:if>
-            </a>
-          </li>
-        </b:loop>
-      </ul>
-    </b:includable>
-  </b:widget>
   <b:widget cond='data:blog.url == &quot;https://www.techbegginer.com/p/contact-us.html&quot;' id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' visible='true'>
     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -3049,53 +2996,6 @@ width: 33%;
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='Categories' type='Label' visible='true'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>CLOUD</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main' var='this'>
-      <b:include name='widget-title'/>
-      <b:include name='content'/>
-    </b:includable>
-    <b:includable id='cloud'>
-  <b:loop values='data:labels' var='label'>
-    <span class='label-size'>
-      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
-      <a class='label-name' expr:href='data:label.url'>
-        <data:label.name/>
-        <b:if cond='data:this.showFreqNumbers'>
-          <span class='label-count'><data:label.count/></span>
-        </b:if>
-      </a>
-    </span>
-  </b:loop>
-</b:includable>
-    <b:includable id='content'>
-      <div class='widget-content'>
-        <b:class expr:name='data:this.display + &quot;-label&quot;'/>
-        <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
-        <b:include cond='data:this.display == &quot;cloud&quot;' name='list'/>
-      </div>
-    </b:includable>
-    <b:includable id='list'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <a class='label-name' expr:href='data:label.url'>
-              <data:label.name/>
-              <b:if cond='data:this.showFreqNumbers'>
-                <span class='label-count'><data:label.count/></span>
-              </b:if>
-            </a>
-          </li>
-        </b:loop>
-      </ul>
-    </b:includable>
-  </b:widget>
 </b:section>
     
     </aside>
@@ -3146,19 +3046,17 @@ width: 33%;
         <b:section id='footermenu' name='Footer Nav' showaddelement='false'>
           <b:widget id='LinkList22' locked='true' title='' type='LinkList' version='1'>
             <b:widget-settings>
-              <b:widget-setting name='link-5'>https://www.techbegginer.com/p/terms-and-conditions.html</b:widget-setting>
               <b:widget-setting name='link-3'>https://www.techbegginer.com/p/privacy-policy.html</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='link-4'>https://www.techbegginer.com/p/terms-and-conditions.html</b:widget-setting>
               <b:widget-setting name='text-1'>Contact</b:widget-setting>
-              <b:widget-setting name='text-0'>About</b:widget-setting>
-              <b:widget-setting name='text-3'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-2'>Disclaimer</b:widget-setting>
-              <b:widget-setting name='text-5'><![CDATA[Terms & Conditions]]></b:widget-setting>
-              <b:widget-setting name='text-4'><![CDATA[Terms & Conditions]]></b:widget-setting>
-              <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.techbegginer.com/p/contact-us.html</b:widget-setting>
+              <b:widget-setting name='text-0'>About</b:widget-setting>
               <b:widget-setting name='link-2'>https://www.techbegginer.com/p/disclaimer.html</b:widget-setting>
+              <b:widget-setting name='text-3'>Privacy Policy</b:widget-setting>
               <b:widget-setting name='link-0'>https://www.techbegginer.com/p/about-us.html</b:widget-setting>
+              <b:widget-setting name='text-2'>Disclaimer</b:widget-setting>
+              <b:widget-setting name='text-4'><![CDATA[Terms & Conditions]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
           
@@ -3187,8 +3085,6 @@ width: 33%;
       </div>
     
     <div id='gotop'/>
-    
-    <div class='bottom-alert' id='bottomAlert'>Copied Successfully...</div>
   
   </body>
   
@@ -3204,7 +3100,7 @@ nav.classList.toggle("left");
 });
 
 document.getElementById('year').innerText = new Date().getFullYear();
-//document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
+document.querySelector('body').addEventListener('contextmenu', e => e.preventDefault());
 let ruhab = document.getElementById('ruhab');
 if(!ruhab || ruhab.getAttribute('href') !== 'https://www.techbegginer.com/' || ruhab.innerText !== 'Tech Begginer'){window.location = 'https://www.techbegginer.com/';}
 let gotop = document.getElementById('gotop');
@@ -3299,35 +3195,6 @@ fetchPsts(recentUrl,recents);
 }
 
 /*]]>*/
-
-  <b:if cond='data:view.isSingleItem'>
-    
-/*<![CDATA[*/
-
-let codeElements = document.querySelectorAll(".copyThis");
-    codeElements.forEach(function(element) {
-        element.addEventListener("dblclick", function() {
-            copyToClipboard(element);
-        });});
-    function copyToClipboard(element) {
-        let tempTextArea = document.createElement("textarea");
-        tempTextArea.value = element.textContent;
-        document.body.appendChild(tempTextArea);
-        tempTextArea.select();
-        tempTextArea.setSelectionRange(0, 99999); 
-        document.execCommand("copy");
-        document.body.removeChild(tempTextArea);
-        showBottomAlert();}
-    function showBottomAlert() {
-        let bottomAlert = document.getElementById("bottomAlert");
-        bottomAlert.style.display = "block";
-        setTimeout(function() {
-            bottomAlert.style.display = "none";
-        }, 3000);}
-
-/*]]>*/
-
-    </b:if>
   
   <b:if cond='data:view.isPost'>
     
@@ -3335,23 +3202,27 @@ let codeElements = document.querySelectorAll(".copyThis");
 
 //TOC by Ruhab Amjad
 const headings = document.querySelectorAll('main article .post-body h2');
-if(headings){
-if(document.querySelector(".mytoc")){
+
+if(headings && document.querySelector(".mytoc")){
 document.querySelector(".mytoc span").addEventListener("click", function () {
     this.parentElement.classList.toggle("block");
-});}
-for (let i = 0; i < headings.length; i++) {
-            let allheadings = headings[i];
-            if (!allheadings.hasAttribute('id')) {
-                allheadings.setAttribute('id', 'h' + i);
+});
+	headings.forEach((heading, index) => {
+			if (!heading.hasAttribute('id')) {
+                heading.setAttribute('id', 'h' + index);
                 let myli = document.createElement('li');
                 let mylink = document.createElement('a');
-                mylink.setAttribute('href', '#' + allheadings.getAttribute('id'));
-                mylink.appendChild(document.createTextNode(allheadings.textContent));
+                mylink.setAttribute('href', '#' + heading.getAttribute('id'));
+                mylink.appendChild(document.createTextNode(heading.textContent));
                 myli.appendChild(mylink);
+
                 if(document.getElementById('mytoc')){
-				document.getElementById('mytoc').appendChild(myli);
-				}}}}
+				document.getElementById("mytoc").appendChild(myli);
+				}
+			} });
+}else{
+console.log("No TOC Code Found.");
+}
 
 //Related Posts by Ruhab Amjad
 let relTag = document.querySelector('.related-tag').getAttribute('data-label');
@@ -3374,7 +3245,7 @@ let olderLink = document.querySelector('a.load-more').getAttribute("href");
 document.querySelector('.load-more').addEventListener('click', function(e){
 	document.querySelector('.loadMore').style.display = 'none';
 	document.querySelector('.loading').style.display = 'inline-block';
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open('GET', olderLink, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
